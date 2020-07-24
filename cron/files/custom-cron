@@ -1,0 +1,5 @@
+00 8 * * * /home/john/cron/cronscript.sh >/home/john/cron/cron.log 2>&1
+
+00 12 * * * /home/john/cron/cronscript.sh  >/home/john/cron/cron.log 2>&1
+
+00 17 * * * /home/john/cron/cronscript.sh  >/home/john/cron/cron.log 2>&1

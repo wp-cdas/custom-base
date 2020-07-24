@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  custom_cron:
+    image: cdasdsp/custom-cron:latest
+    volumes:
+     - "/docker/custom-base/rstudio/files:/home/custom"
+     - "/docker/custom-base/cron/files:/home/custom/cron"
+     - "/data/twitter/files:/home/custom/scrapes"
+    
+networks:
+  default:
+    external: true
+    name: swarmnet
